@@ -1,0 +1,295 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Planète Mercure — Espace de coworking à Mercuer (Ardèche)</title>
+    <meta name="description" content="Planète Mercure, coworking à Mercuer (07200) : open space chaleureux, fibre optique, parking gratuit, kitchenette et imprimantes A4/A3. Réservation par mail ou téléphone.">
+    <meta name="author" content="Planète Mercure">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              mercure: {
+                light: '#d9f0e4',
+                DEFAULT: '#77bfa3',
+                dark: '#4e7d63',
+              }
+            }
+          }
+        }
+      }
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Quicksand:wght@500;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #f8faf9; }
+        h1, h2, h3 { font-family: 'Quicksand', sans-serif; }
+
+        /* Parallax hero */
+        .hero {
+            position: relative;
+            overflow: hidden;
+            height: 90vh;
+            display: flex;
+            align-items: center;
+            background: linear-gradient(180deg, rgba(255,255,255,0.8), rgba(230,243,235,0.8));
+        }
+        .hero-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 120%;
+            background-image: url('https://cdn.pixabay.com/photo/2016/03/26/22/13/coffee-1284019_1280.jpg');
+            background-size: cover;
+            background-position: center;
+            transform: translateY(0);
+            transition: transform 0.1s linear;
+            z-index: 0;
+        }
+        .hero-content {
+            position: relative;
+            z-index: 1;
+        }
+        @media (max-width: 768px) {
+            .hero-bg { background-attachment: scroll; transform: none !important; }
+        }
+    </style>
+</head>
+<body class="text-slate-800 antialiased leading-relaxed">
+
+<!-- HEADER -->
+<header class="bg-white/90 backdrop-blur border-b sticky top-0 z-50 shadow-sm">
+    <div class="max-w-6xl mx-auto px-6 py-0 flex items-center justify-between">
+        <a href="#" class="flex items-center gap-3">
+            <img src="logo-planete-mercure-carre.png" alt="Logo Planète Mercure" class="h-20 w-auto rounded-md">
+            <div>
+                <div class="font-semibold text-lg text-mercure-dark">Planète Mercure</div>
+                <div class="text-xs text-slate-500">Coworking • Mercuer (Ardèche)</div>
+            </div>
+        </a>
+        <nav class="hidden md:flex gap-6 items-center text-sm text-slate-700">
+            <a href="#equipements" class="hover:text-mercure-dark">Équipements</a>
+            <a href="#tarifs" class="hover:text-mercure-dark">Tarifs</a>
+            <a href="#contact" class="hover:text-mercure-dark">Contact</a>
+        </nav>
+        <a href="#contact" class="bg-mercure-dark text-white px-4 py-2 rounded-lg shadow hover:bg-mercure transition">Réserver</a>
+    </div>
+</header>
+
+<!-- HERO -->
+<section class="hero" style="background: url('image-interieure-de-planete-mercure-01.webp'); background-repeat: no-repeat; background-size: cover;">
+    <div class="hero-bg"></div>
+    <div class="hero-content max-w-6xl mx-auto px-6 py-24 grid lg:grid-cols-2 gap-10 items-center" data-aos="fade-up">
+        <div class="p-6 bg-white rounded-xl shadow hover:shadow-md transition">
+            <h1 class="text-4xl font-bold text-mercure-dark">Planète Mercure — un espace de coworking chaleureux en Ardèche</h1>
+            <p class="mt-4 text-slate-700">Un lieu où travail rime avec convivialité. Open space lumineux avec fibre optique, kitchenette et parking gratuit. À 10 minutes d’Aubenas, proche du café associatif <em>Le Pas de Coté</em>.</p>
+            <div class="mt-6 flex flex-wrap gap-3">
+                <a href="#tarifs" class="bg-mercure text-white px-5 py-2 rounded-lg shadow hover:bg-mercure-dark transition">Voir les tarifs</a>
+                <a href="#contact" class="border border-mercure px-5 py-2 rounded-lg text-mercure-dark hover:bg-mercure-light transition">Nous contacter</a>
+            </div>
+        </div>
+        <div class="rounded-2xl overflow-hidden shadow-lg hidden" data-aos="zoom-in">
+            <img src="https://images.pexels.com/photos/733856/pexels-photo-733856.jpeg" alt="Café et carnet sur une table de travail" class="w-full h-80 object-cover">
+        </div>
+    </div>
+</section>
+
+<!-- MAIN -->
+<main class="max-w-6xl mx-auto px-6 py-16">
+    <!-- EQUIPEMENTS -->
+    <section id="equipements" data-aos="fade-up">
+        <div class="planet"></div>
+
+        <h2 class="text-3xl font-bold text-mercure-dark">Équipements & atouts</h2>
+        <p class="text-slate-600 mt-2">Tout pour un environnement de travail agréable et inspirant.</p>
+        <div class="mt-8 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="p-6 bg-white rounded-xl shadow hover:shadow-md transition">
+                <img src="pexels-brett-sayles-1624895.jpg" class="rounded-md mb-3" alt="Fibre optique">
+                <h3 class="font-semibold text-mercure-dark">
+                    Fibre optique <span class="flèche">&rarr;</span>
+                </h3>
+                <p class="text-sm text-slate-600 mt-1">Connexion rapide et fiable pour vos visioconférences et projets.</p>
+            </div>
+            <div class="p-6 bg-white rounded-xl shadow hover:shadow-md transition">
+                <img src="image-interieure-de-planete-mercure-04.webp" class="rounded-md mb-3" alt="Kitchenette conviviale">
+                <h3 class="font-semibold text-mercure-dark">Kitchenette conviviale <span class="flèche">&rarr;</span></h3>
+                <p class="text-sm text-slate-600 mt-1">Un coin café et détente, idéal pour échanger et se ressourcer.</p>
+            </div>
+            <div class="p-6 bg-white rounded-xl shadow hover:shadow-md transition">
+                <img src="pexels-canaros-2417466.jpg" class="rounded-md mb-3" alt="Parking gratuit">
+                <h3 class="font-semibold text-mercure-dark">Parking gratuit <span class="flèche">&rarr;</span></h3>
+                <p class="text-sm text-slate-600 mt-1">Facile d’accès, un parking attenant pour plus de confort.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- TARIFS -->
+    <section id="tarifs" class="mt-20" data-aos="fade-up">
+        <h2 class="text-3xl font-bold text-mercure-dark">Tarifs & formules</h2>
+        <p class="text-slate-600 mt-2">Choisissez la formule adaptée à votre rythme de travail.</p>
+        <div class="mt-6 bg-white rounded-xl shadow overflow-hidden">
+            <img src="pexels-ron-lach-8035295.jpg" alt="Café et ordinateur portable" class="w-full h-48 object-cover">
+            <table class="min-w-full text-sm border-t">
+                <thead class="bg-mercure-light text-mercure-dark">
+                <tr>
+                    <th class="p-3 border">Formule</th>
+                    <th class="p-3 border">Ponctuelle</th>
+                    <th class="p-3 border">1 j / semaine</th>
+                    <th class="p-3 border">2 j / semaine</th>
+                    <th class="p-3 border">3 j / semaine</th>
+                    <th class="p-3 border">4 j + / semaine</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr class="text-center">
+                    <td class="p-3 border font-semibold">Prix</td>
+                    <td class="p-3 border">10€</td>
+                    <td class="p-3 border">20€/mois</td>
+                    <td class="p-3 border">40€/mois</td>
+                    <td class="p-3 border">60€/mois</td>
+                    <td class="p-3 border">80€/mois</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="mt-20 grid lg:grid-cols-3 gap-8" data-aos="fade-up">
+        <div class="lg:col-span-2">
+            <h2 class="text-3xl font-bold text-mercure-dark">Nous contacter</h2>
+            <p class="text-slate-600 mt-2">141 Route du Village, 07200 Mercuer — à 10 minutes d’Aubenas.</p>
+            <div class="mt-4 rounded-lg overflow-hidden border-2 border-mercure-light shadow">
+                <iframe title="Planète Mercure carte" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d476.5033972835784!2d4.357763248684466!3d44.63084499961236!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12b4dfb82391cb77%3A0xc14801e429bd1163!2sPlan%C3%A8te%20Mercure!5e0!3m2!1sfr!2sus!4v1761167051745!5m2!1sfr!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"  class="w-full h-72"></iframe>
+            </div>
+        </div>
+
+        <aside class="bg-white p-6 rounded-xl shadow flex flex-col justify-between">
+            <div>
+                <h3 class="text-mercure-dark font-semibold text-lg">Réserver</h3>
+                <p class="text-sm text-slate-600 mt-2">Contactez-nous par mail ou téléphone pour réserver votre poste.</p>
+            </div>
+            <div class="mt-4 space-y-3">
+                <a href="mailto:contact@planetemercure.fr?subject=Réservation%20Planète%20Mercure" class="block text-center bg-mercure text-white px-4 py-2 rounded-lg hover:bg-mercure-dark transition">Envoyer un mail</a>
+                <a href="tel:+33963557650" class="block text-center border border-mercure px-4 py-2 rounded-lg text-mercure-dark hover:bg-mercure-light transition">Appeler</a>
+            </div>
+        </aside>
+    </section>
+</main>
+
+<!-- FOOTER -->
+<footer class="bg-mercure-light mt-20">
+    <div class="max-w-6xl mx-auto px-6 py-8 flex flex-col sm:flex-row justify-between items-start gap-4 text-slate-700">
+        <div class="flex items-center gap-3">
+            <img src="logo-planete-mercure-carre.png" alt="Logo Planète Mercure" class="h-20 w-auto rounded">
+            <div>
+                <div class="font-semibold text-mercure-dark">Planète Mercure</div>
+                <div class="text-sm">141 Route du Village, 07200 Mercuer</div>
+            </div>
+        </div>
+        <div class="text-sm">© <span id="year"></span> Planète Mercure — Coworking en Ardèche</div>
+    </div>
+</footer>
+<style>
+    .planet {
+        position: absolute;
+        width: 800px;
+        height: 800px;
+        border-radius: 50%;
+        background: radial-gradient(circle at 30% 30%, #d9f0e4, #77bfa3);
+        box-shadow: 0 0 200px #6fa587d4;
+        top: 0;
+        left: -200px;
+        z-index: 0;
+        transform: translate(0, 0);
+        transition: transform 0.05s linear;
+        pointer-events: none;  /* pour ne pas interférer avec le contenu */
+    }
+
+
+    /* Masquer la planète sur les petits écrans (optionnel) */
+    @media (max-width: 768px) {
+        .planet { display: none; }
+    }
+</style>
+
+<style>
+    /* 1️⃣ On cible uniquement le premier card (Fibre optique)  */
+    #equipements .p-6 {
+        position: relative;
+        overflow: hidden;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    /* 2️⃣ Effet de levitation et ombre portée  */
+    #equipements .p-6:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 12px 24px rgba(0,0,0,0.12);
+    }
+
+    #equipements .p-6:hover::before {
+        opacity: 1;
+    }
+
+    /* 4️⃣ Petit icône (ex. une flèche) qui glisse vers la droite  */
+    #equipements .p-6 .flèche {
+        display: inline-block;
+        margin-left: 0;
+        transition: transform 0.3s ease;
+    }
+
+    #equipements .p-6:hover .flèche {
+        transform: translateX(8px);
+    }
+</style>
+
+
+<!-- SCRIPTS -->
+<script>
+  AOS.init({ duration: 800, once: true });
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  // Parallax effect
+  const heroBg = document.querySelector('.hero-bg');
+  window.addEventListener('scroll', () => {
+    if (window.innerWidth > 768) {
+      const offset = window.pageYOffset;
+      heroBg.style.transform = `translateY(${offset * 0.3}px)`;
+    }
+  });
+</script>
+
+<script>
+  // 2️⃣ Écoute du scroll
+  const planet = document.querySelector('.planet');
+
+  // Pour éviter les appels trop fréquents
+  let ticking = false;
+
+  window.addEventListener('scroll', () => {
+    if (!ticking) {
+      window.requestAnimationFrame(() => {
+        // Le décalage sera proportionnel au scroll (ex: 0.3 → 30% de la hauteur de la fenêtre)
+        const offset = window.pageYOffset;
+        const speed = 0.3;          // Ajustez la vitesse
+        planet.style.transform = `translate(-50%, ${offset * speed}px)`;
+        ticking = false;
+      });
+      ticking = true;
+    }
+  });
+</script>
+
+
+</body>
+</html>
