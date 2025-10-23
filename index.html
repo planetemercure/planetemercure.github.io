@@ -137,30 +137,63 @@
     <section id="tarifs" class="mt-20" data-aos="fade-up">
         <h2 class="text-3xl font-bold text-mercure-dark">Tarifs & formules</h2>
         <p class="text-slate-600 mt-2">Choisissez la formule adaptée à votre rythme de travail.</p>
+
+        <!-- ----------------------------------- -->
+        <!--  Tableau (desktop) -->
+        <!-- ----------------------------------- -->
         <div class="mt-6 bg-white rounded-xl shadow overflow-hidden">
             <img src="pexels-ron-lach-8035295.jpg" alt="Café et ordinateur portable" class="w-full h-48 object-cover">
-            <table class="min-w-full text-sm border-t">
-                <thead class="bg-mercure-light text-mercure-dark">
-                <tr>
-                    <th class="p-3 border">Formule</th>
-                    <th class="p-3 border">Ponctuelle</th>
-                    <th class="p-3 border">1 j / semaine</th>
-                    <th class="p-3 border">2 j / semaine</th>
-                    <th class="p-3 border">3 j / semaine</th>
-                    <th class="p-3 border">4 j + / semaine</th>
-                </tr>
-                </thead>
-                <tbody>
-                <tr class="text-center">
-                    <td class="p-3 border font-semibold">Prix</td>
-                    <td class="p-3 border">10€</td>
-                    <td class="p-3 border">20€/mois</td>
-                    <td class="p-3 border">40€/mois</td>
-                    <td class="p-3 border">60€/mois</td>
-                    <td class="p-3 border">80€/mois</td>
-                </tr>
-                </tbody>
-            </table>
+            <div class="overflow-x-auto">
+                <table class="min-w-full text-sm border-t table-auto">
+                    <thead class="bg-mercure-light text-mercure-dark">
+                    <tr>
+                        <th class="p-3 border">Formule</th>
+                        <th class="p-3 border">Ponctuelle</th>
+                        <th class="p-3 border">1 j / semaine</th>
+                        <th class="p-3 border">2 j / semaine</th>
+                        <th class="p-3 border">3 j / semaine</th>
+                        <th class="p-3 border">4 j + / semaine</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr class="text-center">
+                        <td class="p-3 border font-semibold">Prix</td>
+                        <td class="p-3 border">10 €</td>
+                        <td class="p-3 border">20 €/mois</td>
+                        <td class="p-3 border">40 €/mois</td>
+                        <td class="p-3 border">60 €/mois</td>
+                        <td class="p-3 border">80 €/mois</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- ----------------------------------- -->
+        <!--  Cards vertical (mobile) -->
+        <!-- ----------------------------------- -->
+        <div class="mt-6 hidden sm:block">   <!-- hidden on mobile -->
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+        </div>
+
+        <div class="mt-6 sm:hidden">   <!-- visible only on mobile -->
+            <div class="space-y-4">
+                <!-- Card 1 -->
+                <div class="bg-white rounded-xl shadow p-4">
+                    <div class="flex items-center justify-between border-b border-mercure-light text-mercure-dark mb-2">
+                        <h3 class="font-semibold mb-2">Formule</h3>
+                        <h3 class="font-semibold mb-2">Prix</h3>
+                    </div>
+                    <ul class="grid gap-2">
+                        <li class="flex justify-between"><span class="text-slate-700">Ponctuelle</span><span>10 €</span></li>
+                        <li class="flex justify-between"><span class="text-slate-700">1 j / semaine</span><span>20 €/mois</span></li>
+                        <li class="flex justify-between"><span class="text-slate-700">2 j / semaine</span><span>40 €/mois</span></li>
+                        <li class="flex justify-between"><span class="text-slate-700">3 j / semaine</span><span>60 €/mois</span></li>
+                        <li class="flex justify-between"><span class="text-slate-700">4 j + / semaine</span><span>80 €/mois</span></li>
+                    </ul>
+                </div>
+                <!-- Si vous avez d’autres lignes à afficher, répétez le bloc ci‑dessus -->
+            </div>
         </div>
     </section>
 
@@ -222,6 +255,13 @@
     /* Masquer la planète sur les petits écrans (optionnel) */
     @media (max-width: 768px) {
         .planet { display: none; }
+    }
+</style>
+
+<style>
+    /* Tarifs section */
+    @media (max-width: 768px) {
+        #tarifs table { display: none; }
     }
 </style>
 
